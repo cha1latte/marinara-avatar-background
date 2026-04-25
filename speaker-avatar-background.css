@@ -1,0 +1,35 @@
+/* Speaker Avatar Background — group-chat avatar background extension for Marinara Engine */
+
+.speaker-avatar-bg {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+
+.speaker-avatar-bg.is-hidden {
+  opacity: 0;
+}
+
+.speaker-avatar-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px) saturate(0.5);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  will-change: opacity;
+}
+
+.speaker-avatar-bg-layer.is-active {
+  opacity: 0.1;
+}
+
+.speaker-avatar-bg.is-reduced-motion,
+.speaker-avatar-bg.is-reduced-motion .speaker-avatar-bg-layer {
+  transition: none;
+}
