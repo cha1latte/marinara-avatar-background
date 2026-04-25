@@ -19,7 +19,13 @@ If your OS has `prefers-reduced-motion: reduce`, transitions are disabled automa
 
 ## Customising the look
 
-Press **Ctrl+Shift+A** at any time to open the settings panel. You can:
+Open the settings panel any of three ways:
+
+- **Desktop:** press **Ctrl+Shift+A**.
+- **Mobile or anywhere without a keyboard:** add `#saab` to the URL and press Go. The hash is cleaned up automatically once the panel opens, so it stays out of your history.
+- Either way, press **Esc** or tap **Close** to dismiss.
+
+From the panel you can:
 
 - Toggle the background on or off without disabling the extension itself.
 - Adjust **opacity** (default 0.3) — higher = more visible avatar.
