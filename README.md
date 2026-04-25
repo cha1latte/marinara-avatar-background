@@ -17,6 +17,19 @@ Use the **Settings → Extensions** toggle next to the extension name. There is 
 
 If your OS has `prefers-reduced-motion: reduce`, transitions are disabled automatically and speaker swaps become instant — no setting required.
 
+## Customising the look
+
+Press **Ctrl+Shift+A** at any time to open the settings panel. You can:
+
+- Toggle the background on or off without disabling the extension itself.
+- Adjust **opacity** (default 0.3) — higher = more visible avatar.
+- Adjust **blur** (default 12 px) — higher = softer, lower = sharper.
+- Click **Reset** to restore defaults.
+
+All settings persist in `localStorage` and survive reloads.
+
+If you prefer setting things via CSS instead, opacity and blur are also exposed as custom properties (`--saab-opacity`, `--saab-blur`) and can be overridden in **Settings → Custom CSS**.
+
 ## How it works
 
 - Detects Conversation mode via the `[data-component="ChatArea.Conversation"]` marker on the surface root.
