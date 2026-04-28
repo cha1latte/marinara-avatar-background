@@ -19,18 +19,14 @@ If your OS has `prefers-reduced-motion: reduce`, transitions are disabled automa
 
 ## Customising the look
 
-Open the settings panel any of three ways:
+Open **Settings → Extensions**, find the **Avatar Background** card, and click the small **gear icon** next to the remove button. A popover opens right there with:
 
-- **Desktop:** press **Ctrl+Shift+A**.
-- **Mobile or anywhere without a keyboard:** add `#saab` to the URL and press Go. The hash is cleaned up automatically once the panel opens, so it stays out of your history.
-- Either way, press **Esc** or tap **Close** to dismiss.
+- **Enabled** — toggle the background on or off without disabling the extension itself.
+- **Opacity** (default 0.3) — higher = more visible avatar.
+- **Blur** (default 12 px) — higher = softer, lower = sharper.
+- **Reset** — restore defaults.
 
-From the panel you can:
-
-- Toggle the background on or off without disabling the extension itself.
-- Adjust **opacity** (default 0.3) — higher = more visible avatar.
-- Adjust **blur** (default 12 px) — higher = softer, lower = sharper.
-- Click **Reset** to restore defaults.
+Click anywhere outside the popover (or hit **Close**) to dismiss it. Works the same on desktop and mobile.
 
 All settings persist in `localStorage` and survive reloads.
 
